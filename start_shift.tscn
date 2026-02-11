@@ -1,5 +1,64 @@
 [gd_scene format=3 uid="uid://dmg2d10m7hy0j"]
 
+[ext_resource type="Script" uid="uid://bqyxctwpns1km" path="res://start_shift.gd" id="1_nreo8"]
+[ext_resource type="AudioStream" uid="uid://cxmxbq3ifnnp7" path="res://Sound/iPhone Alarma.mp3" id="2_dwjii"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pq3yp"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_nreo8"]
+font_size = 84
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dwjii"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nreo8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dwjii"]
+bg_color = Color(0.9015185, 0.48548663, 0.2124277, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_28q7t"]
+bg_color = Color(0.4325066, 0.20318359, 0.040545166, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pq3yp"]
+bg_color = Color(0.7547165, 0.3787994, 0.11844727, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nreo8"]
+bg_color = Color(0.4128974, 8.8440254e-07, 2.4065375e-08, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_28q7t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5qr2p"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8gr5x"]
+bg_color = Color(0.93333334, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q6bom"]
+bg_color = Color(0.6056738, 1.6605109e-06, 3.85046e-07, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
 [node name="StartShift" type="Control" unique_id=1212048110]
 layout_mode = 3
 anchors_preset = 15
@@ -7,8 +66,114 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_nreo8")
+metadata/_edit_vertical_guides_ = [-47.0]
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1289481588]
 layout_mode = 0
 offset_right = 720.0
 offset_bottom = 1290.0
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=2122521642]
+layout_mode = 0
+offset_right = 13.0
+offset_bottom = 1289.0
+color = Color(0.9015185, 0.48548663, 0.2124277, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="." unique_id=930682896]
+layout_mode = 0
+offset_right = 713.0
+offset_bottom = 14.0
+color = Color(0.9015185, 0.48548663, 0.2124277, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="." unique_id=1301202311]
+layout_mode = 0
+offset_left = 708.0
+offset_right = 731.0
+offset_bottom = 1297.0
+color = Color(0.9015185, 0.48548663, 0.2124277, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=16224233]
+layout_mode = 0
+offset_right = 708.0
+offset_bottom = 1295.0
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer" unique_id=1838659809]
+custom_minimum_size = Vector2(0, 180)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_pq3yp")
+
+[node name="Temporizador" type="Label" parent="VBoxContainer" unique_id=844952610]
+layout_mode = 2
+text = "00:00:00"
+label_settings = SubResource("LabelSettings_nreo8")
+horizontal_alignment = 1
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer" unique_id=1874863129]
+custom_minimum_size = Vector2(0, 180)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_dwjii")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1636877044]
+custom_minimum_size = Vector2(0, 158)
+layout_mode = 2
+
+[node name="VSeparator" type="VSeparator" parent="VBoxContainer/HBoxContainer" unique_id=1626138838]
+custom_minimum_size = Vector2(157, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_nreo8")
+
+[node name="IniciarJornadaBT" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=787479864]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.9612289, 0.961229, 0.9612289, 1)
+theme_override_colors/font_outline_color = Color(0.9612289, 0.961229, 0.9612289, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_dwjii")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_28q7t")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pq3yp")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_nreo8")
+text = "INICIAR JORNADA"
+
+[node name="VSeparator2" type="VSeparator" parent="VBoxContainer/HBoxContainer" unique_id=690728055]
+custom_minimum_size = Vector2(157, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_28q7t")
+
+[node name="HSeparator3" type="HSeparator" parent="VBoxContainer" unique_id=726425397]
+custom_minimum_size = Vector2(0, 264)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_5qr2p")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer" unique_id=716582563]
+custom_minimum_size = Vector2(0, 78)
+layout_mode = 2
+
+[node name="VSeparator" type="VSeparator" parent="VBoxContainer/HBoxContainer2" unique_id=533348623]
+custom_minimum_size = Vector2(178, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_nreo8")
+
+[node name="CerrarSesionBT" type="Button" parent="VBoxContainer/HBoxContainer2" unique_id=250982341]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.9612289, 0.961229, 0.9612289, 1)
+theme_override_colors/font_outline_color = Color(0.9612289, 0.961229, 0.9612289, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_8gr5x")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_28q7t")
+theme_override_styles/hover = SubResource("StyleBoxFlat_q6bom")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_nreo8")
+text = "Cerrar Sesion"
+
+[node name="VSeparator2" type="VSeparator" parent="VBoxContainer/HBoxContainer2" unique_id=635002030]
+custom_minimum_size = Vector2(178, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_28q7t")
+
+[node name="Alarma" type="AudioStreamPlayer" parent="." unique_id=1550013938]
+unique_name_in_owner = true
+stream = ExtResource("2_dwjii")
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/IniciarJornadaBT" to="." method="_on_iniciar_jornada_bt_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/CerrarSesionBT" to="." method="_on_cerrar_sesion_bt_pressed"]

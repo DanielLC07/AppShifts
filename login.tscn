@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://cowuefv1m5r84"]
 
+[ext_resource type="Script" uid="uid://cycgnh6he0rs1" path="res://login.gd" id="1_cau7c"]
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tajqu"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_tajqu"]
@@ -14,6 +16,9 @@ font_color = Color(0.14333999, 0.14333999, 0.14333999, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3n56f"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xlo4h"]
+bg_color = Color(0.8220193, 0.42422596, 0.14826378, 1)
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xlo4h"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bvvwm"]
@@ -24,13 +29,60 @@ font_color = Color(0.14333999, 0.14333999, 0.14333999, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6hqeh"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bvvwm"]
+bg_color = Color(0.8220193, 0.42422596, 0.14826378, 1)
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_edd8a"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eqty5"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ma4wh"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tajqu"]
+bg_color = Color(0.9015185, 0.48548663, 0.2124277, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cau7c"]
+bg_color = Color(0.6392157, 0.2509804, 0.05490196, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3n56f"]
+bg_color = Color(0.8220193, 0.42422596, 0.14826378, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0s12h"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xwwoh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6hqeh"]
+bg_color = Color(0.93333334, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_edd8a"]
+bg_color = Color(0.4128974, 8.8440254e-07, 2.4065375e-08, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eqty5"]
+bg_color = Color(0.6375517, 2.3223088e-06, 2.8878452e-07, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0trqi"]
 
@@ -41,6 +93,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_cau7c")
 
 [node name="BackLogin" type="ColorRect" parent="." unique_id=2086093186]
 layout_mode = 0
@@ -53,7 +106,7 @@ offset_right = 719.0
 offset_bottom = 1291.0
 
 [node name="HSeparator" type="HSeparator" parent="VBoxContainer" unique_id=1619127876]
-custom_minimum_size = Vector2(0, 150)
+custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 theme_override_styles/separator = SubResource("StyleBoxEmpty_tajqu")
 
@@ -64,7 +117,7 @@ text = "Bienvenido"
 label_settings = SubResource("LabelSettings_tajqu")
 
 [node name="HSeparator2" type="HSeparator" parent="VBoxContainer" unique_id=1130025907]
-custom_minimum_size = Vector2(0, 75)
+custom_minimum_size = Vector2(0, 60)
 layout_mode = 2
 theme_override_styles/separator = SubResource("StyleBoxEmpty_cau7c")
 
@@ -85,6 +138,7 @@ theme_override_styles/separator = SubResource("StyleBoxEmpty_3n56f")
 [node name="InputCorreo" type="LineEdit" parent="VBoxContainer/HBoxContainer" unique_id=1790668073]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_xlo4h")
 placeholder_text = "usuario@ejemplo.com"
 max_length = 30
 
@@ -115,6 +169,7 @@ theme_override_styles/separator = SubResource("StyleBoxEmpty_6hqeh")
 [node name="InputCorreo" type="LineEdit" parent="VBoxContainer/HBoxContainer2" unique_id=75571027]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_bvvwm")
 max_length = 30
 secret = true
 
@@ -129,6 +184,7 @@ layout_mode = 2
 theme_override_styles/separator = SubResource("StyleBoxEmpty_eqty5")
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer" unique_id=847465231]
+custom_minimum_size = Vector2(0, 102)
 layout_mode = 2
 size_flags_vertical = 4
 
@@ -140,7 +196,11 @@ theme_override_styles/separator = SubResource("StyleBoxEmpty_ma4wh")
 [node name="InicioSesionBT" type="Button" parent="VBoxContainer/HBoxContainer3" unique_id=1153366417]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 12
+size_flags_vertical = 13
+theme_override_font_sizes/font_size = 38
+theme_override_styles/normal = SubResource("StyleBoxFlat_tajqu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cau7c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3n56f")
 action_mode = 0
 text = "Inicio Sesion"
 
@@ -149,8 +209,39 @@ custom_minimum_size = Vector2(164, 0)
 layout_mode = 2
 theme_override_styles/separator = SubResource("StyleBoxEmpty_0s12h")
 
+[node name="HSeparator6" type="HSeparator" parent="VBoxContainer" unique_id=647768005]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_xwwoh")
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="VBoxContainer" unique_id=1683040447]
+custom_minimum_size = Vector2(0, 78)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/HBoxContainer4" unique_id=1887251723]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_ma4wh")
+
+[node name="CerrarBT" type="Button" parent="VBoxContainer/HBoxContainer4" unique_id=679190838]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 13
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_6hqeh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_edd8a")
+theme_override_styles/hover = SubResource("StyleBoxFlat_eqty5")
+action_mode = 0
+text = "Cerrar"
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/HBoxContainer4" unique_id=518811232]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_0s12h")
+
 [node name="HSeparator5" type="HSeparator" parent="VBoxContainer" unique_id=1963208490]
-custom_minimum_size = Vector2(0, 200)
+custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
 theme_override_styles/separator = SubResource("StyleBoxEmpty_0trqi")
 
@@ -158,3 +249,6 @@ theme_override_styles/separator = SubResource("StyleBoxEmpty_0trqi")
 layout_mode = 2
 size_flags_vertical = 3
 color = Color(0.9015185, 0.48548663, 0.2124277, 1)
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer3/InicioSesionBT" to="." method="_on_inicio_sesion_bt_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer4/CerrarBT" to="." method="_on_cerrar_bt_pressed"]
