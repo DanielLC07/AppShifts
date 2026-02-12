@@ -1,0 +1,299 @@
+[gd_scene format=3 uid="uid://b1yev02kxaky7"]
+
+[ext_resource type="Script" uid="uid://kmxwr47njlfi" path="res://Scene/sign_up.gd" id="1_p3h1n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ydock"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7t38a"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8g0tc"]
+font_size = 48
+font_color = Color(0.8220193, 0.42422596, 0.14826378, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_csypb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1g6s5"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_3gg6c"]
+font_size = 48
+font_color = Color(0.14333999, 0.14333999, 0.14333999, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uiia1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qhovo"]
+bg_color = Color(0.8220193, 0.42422596, 0.14826378, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hfv8k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bfodn"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_lba0c"]
+font_size = 48
+font_color = Color(0.14333999, 0.14333999, 0.14333999, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xq0ht"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k2kv1"]
+bg_color = Color(0.8220193, 0.42422596, 0.14826378, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fgt1m"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s8u5u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jje4n"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qfw3w"]
+bg_color = Color(0.9015185, 0.48548663, 0.2124277, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cfew5"]
+bg_color = Color(0.6392157, 0.2509804, 0.05490196, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_burbp"]
+bg_color = Color(0.8220193, 0.42422596, 0.14826378, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m0s8x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_84n42"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jnthv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dn5ey"]
+bg_color = Color(0.93333334, 0, 0, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s2t6v"]
+bg_color = Color(0.4128974, 8.8440254e-07, 2.4065375e-08, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ornhi"]
+bg_color = Color(0.6375517, 2.3223088e-06, 2.8878452e-07, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_npy3j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vpxmt"]
+
+[node name="Sign Up" type="Control" unique_id=1988555731]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_p3h1n")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=722746274]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1584231235]
+layout_mode = 0
+offset_right = 11.0
+offset_bottom = 1296.0
+color = Color(0.9015185, 0.48548663, 0.2124277, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="." unique_id=2137099659]
+layout_mode = 0
+offset_left = 710.0
+offset_top = -12.0
+offset_right = 721.0
+offset_bottom = 1284.0
+color = Color(0.9015185, 0.48548663, 0.2124277, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="." unique_id=1917974291]
+layout_mode = 0
+offset_right = 714.0
+offset_bottom = 25.0
+color = Color(0.9015185, 0.48548663, 0.2124277, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=67619909]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer" unique_id=1684757324]
+custom_minimum_size = Vector2(0, 128)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_ydock")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=586727549]
+layout_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/HBoxContainer" unique_id=1102811949]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_7t38a")
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer" unique_id=1116445587]
+layout_mode = 2
+text = "Welcome, Please Sign Up!"
+label_settings = SubResource("LabelSettings_8g0tc")
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/HBoxContainer" unique_id=863426874]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_csypb")
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer" unique_id=1053364469]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_1g6s5")
+
+[node name="Label2" type="Label" parent="VBoxContainer" unique_id=1465590396]
+layout_mode = 2
+text = "Enter email"
+label_settings = SubResource("LabelSettings_3gg6c")
+horizontal_alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer" unique_id=1919707695]
+layout_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/HBoxContainer2" unique_id=14950801]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_uiia1")
+
+[node name="InputCorreo" type="LineEdit" parent="VBoxContainer/HBoxContainer2" unique_id=309823865]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_qhovo")
+placeholder_text = "usuario@ejemplo.com"
+max_length = 30
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/HBoxContainer2" unique_id=1228808842]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_hfv8k")
+
+[node name="HSeparator4" type="HSeparator" parent="VBoxContainer" unique_id=1874536419]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_bfodn")
+
+[node name="Label3" type="Label" parent="VBoxContainer" unique_id=510005080]
+layout_mode = 2
+text = "Enter password"
+label_settings = SubResource("LabelSettings_lba0c")
+horizontal_alignment = 1
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer" unique_id=1491640938]
+layout_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/HBoxContainer3" unique_id=1297113756]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_xq0ht")
+
+[node name="InputCorreo" type="LineEdit" parent="VBoxContainer/HBoxContainer3" unique_id=1821845675]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_k2kv1")
+max_length = 30
+secret = true
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/HBoxContainer3" unique_id=414332879]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_fgt1m")
+
+[node name="HSeparator3" type="HSeparator" parent="VBoxContainer" unique_id=1535363531]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_s8u5u")
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="VBoxContainer" unique_id=156417285]
+custom_minimum_size = Vector2(0, 102)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/HBoxContainer4" unique_id=645867054]
+custom_minimum_size = Vector2(164, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_jje4n")
+
+[node name="SignUPBT" type="Button" parent="VBoxContainer/HBoxContainer4" unique_id=2085463616]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 13
+theme_override_font_sizes/font_size = 38
+theme_override_styles/normal = SubResource("StyleBoxFlat_qfw3w")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cfew5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_burbp")
+action_mode = 0
+text = "SIGN UP"
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/HBoxContainer4" unique_id=1303967568]
+custom_minimum_size = Vector2(164, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_m0s8x")
+
+[node name="HSeparator6" type="HSeparator" parent="VBoxContainer" unique_id=402851825]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_84n42")
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="VBoxContainer" unique_id=603768223]
+custom_minimum_size = Vector2(0, 78)
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer/HBoxContainer5" unique_id=1476082162]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_jnthv")
+
+[node name="CerrarBT" type="Button" parent="VBoxContainer/HBoxContainer5" unique_id=819442404]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 13
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_dn5ey")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_s2t6v")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ornhi")
+action_mode = 0
+text = "CLOSE"
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer/HBoxContainer5" unique_id=2081817377]
+custom_minimum_size = Vector2(180, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_npy3j")
+
+[node name="HSeparator5" type="HSeparator" parent="VBoxContainer" unique_id=716415392]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_vpxmt")
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer" unique_id=969620892]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0.9015185, 0.48548663, 0.2124277, 1)
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer4/SignUPBT" to="." method="_on_sign_upbt_pressed"]

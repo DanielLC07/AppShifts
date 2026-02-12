@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dmg2d10m7hy0j"]
 
-[ext_resource type="Script" uid="uid://bqyxctwpns1km" path="res://start_shift.gd" id="1_nreo8"]
+[ext_resource type="Script" uid="uid://bqyxctwpns1km" path="res://Scene/start_shift.gd" id="1_nreo8"]
 [ext_resource type="AudioStream" uid="uid://cxmxbq3ifnnp7" path="res://Sound/iPhone Alarma.mp3" id="2_dwjii"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pq3yp"]
@@ -133,7 +133,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_dwjii")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_28q7t")
 theme_override_styles/hover = SubResource("StyleBoxFlat_pq3yp")
 theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_nreo8")
-text = "INICIAR JORNADA"
+text = "START SHIFT"
 
 [node name="VSeparator2" type="VSeparator" parent="VBoxContainer/HBoxContainer" unique_id=690728055]
 custom_minimum_size = Vector2(157, 0)
@@ -164,7 +164,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_8gr5x")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_28q7t")
 theme_override_styles/hover = SubResource("StyleBoxFlat_q6bom")
 theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_nreo8")
-text = "Cerrar Sesion"
+text = "LOG OUT"
 
 [node name="VSeparator2" type="VSeparator" parent="VBoxContainer/HBoxContainer2" unique_id=635002030]
 custom_minimum_size = Vector2(178, 0)

@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://cowuefv1m5r84"]
 
-[ext_resource type="Script" uid="uid://cycgnh6he0rs1" path="res://login.gd" id="1_cau7c"]
+[ext_resource type="Script" uid="uid://cycgnh6he0rs1" path="res://Scene/login.gd" id="1_18a72"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tajqu"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_tajqu"]
 font_size = 80
-font_color = Color(0.9015185, 0.48548663, 0.2124277, 1)
+font_color = Color(0.9019608, 0.4862745, 0.21176471, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cau7c"]
 
@@ -93,7 +93,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_cau7c")
+script = ExtResource("1_18a72")
 
 [node name="BackLogin" type="ColorRect" parent="." unique_id=2086093186]
 layout_mode = 0
@@ -113,7 +113,7 @@ theme_override_styles/separator = SubResource("StyleBoxEmpty_tajqu")
 [node name="Label" type="Label" parent="VBoxContainer" unique_id=358814347]
 layout_mode = 2
 size_flags_horizontal = 4
-text = "Bienvenido"
+text = "WELCOME!"
 label_settings = SubResource("LabelSettings_tajqu")
 
 [node name="HSeparator2" type="HSeparator" parent="VBoxContainer" unique_id=1130025907]
@@ -123,7 +123,7 @@ theme_override_styles/separator = SubResource("StyleBoxEmpty_cau7c")
 
 [node name="Label2" type="Label" parent="VBoxContainer" unique_id=613284789]
 layout_mode = 2
-text = "Introduzca Correo"
+text = "Enter email"
 label_settings = SubResource("LabelSettings_cau7c")
 horizontal_alignment = 1
 
@@ -154,7 +154,7 @@ theme_override_styles/separator = SubResource("StyleBoxEmpty_bvvwm")
 
 [node name="Label3" type="Label" parent="VBoxContainer" unique_id=587024152]
 layout_mode = 2
-text = "Introduzca Contraseña"
+text = "Enter password"
 label_settings = SubResource("LabelSettings_3n56f")
 horizontal_alignment = 1
 
@@ -166,7 +166,7 @@ custom_minimum_size = Vector2(36, 0)
 layout_mode = 2
 theme_override_styles/separator = SubResource("StyleBoxEmpty_6hqeh")
 
-[node name="InputCorreo" type="LineEdit" parent="VBoxContainer/HBoxContainer2" unique_id=75571027]
+[node name="InputPassword" type="LineEdit" parent="VBoxContainer/HBoxContainer2" unique_id=75571027]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/normal = SubResource("StyleBoxFlat_bvvwm")
@@ -179,7 +179,7 @@ layout_mode = 2
 theme_override_styles/separator = SubResource("StyleBoxEmpty_edd8a")
 
 [node name="HSeparator3" type="HSeparator" parent="VBoxContainer" unique_id=385709111]
-custom_minimum_size = Vector2(0, 75)
+custom_minimum_size = Vector2(0, 45)
 layout_mode = 2
 theme_override_styles/separator = SubResource("StyleBoxEmpty_eqty5")
 
@@ -202,9 +202,25 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_tajqu")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_cau7c")
 theme_override_styles/hover = SubResource("StyleBoxFlat_3n56f")
 action_mode = 0
-text = "Inicio Sesion"
+text = "Login"
 
 [node name="HSeparator2" type="HSeparator" parent="VBoxContainer/HBoxContainer3" unique_id=1798337789]
+custom_minimum_size = Vector2(86, 0)
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_0s12h")
+
+[node name="SignUPBT" type="Button" parent="VBoxContainer/HBoxContainer3" unique_id=1508920054]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 13
+theme_override_font_sizes/font_size = 38
+theme_override_styles/normal = SubResource("StyleBoxFlat_tajqu")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cau7c")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3n56f")
+action_mode = 0
+text = "SignUP"
+
+[node name="HSeparator3" type="HSeparator" parent="VBoxContainer/HBoxContainer3" unique_id=1211998113]
 custom_minimum_size = Vector2(164, 0)
 layout_mode = 2
 theme_override_styles/separator = SubResource("StyleBoxEmpty_0s12h")
@@ -233,7 +249,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_6hqeh")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_edd8a")
 theme_override_styles/hover = SubResource("StyleBoxFlat_eqty5")
 action_mode = 0
-text = "Cerrar"
+text = "CLOSE"
 
 [node name="HSeparator2" type="HSeparator" parent="VBoxContainer/HBoxContainer4" unique_id=518811232]
 custom_minimum_size = Vector2(180, 0)
@@ -251,4 +267,6 @@ size_flags_vertical = 3
 color = Color(0.9015185, 0.48548663, 0.2124277, 1)
 
 [connection signal="pressed" from="VBoxContainer/HBoxContainer3/InicioSesionBT" to="." method="_on_inicio_sesion_bt_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer3/SignUPBT" to="." method="_on_inicio_sesion_bt_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer3/SignUPBT" to="." method="_on_sign_upbt_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer4/CerrarBT" to="." method="_on_cerrar_bt_pressed"]
