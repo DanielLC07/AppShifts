@@ -267,6 +267,6 @@ size_flags_vertical = 3
 color = Color(0.9015185, 0.48548663, 0.2124277, 1)
 
 [connection signal="pressed" from="VBoxContainer/HBoxContainer3/InicioSesionBT" to="." method="_on_inicio_sesion_bt_pressed"]
-[connection signal="pressed" from="VBoxContainer/HBoxContainer3/SignUPBT" to="." method="_on_inicio_sesion_bt_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer3/SignUPBT" to="." method="_on_sign_upbt_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer3/SignUPBT" to="." method="_on_inicio_sesion_bt_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer4/CerrarBT" to="." method="_on_cerrar_bt_pressed"]
