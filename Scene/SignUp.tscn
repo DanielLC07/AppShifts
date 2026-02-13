@@ -212,7 +212,7 @@ custom_minimum_size = Vector2(180, 0)
 layout_mode = 2
 theme_override_styles/separator = SubResource("StyleBoxEmpty_xq0ht")
 
-[node name="InputCorreo" type="LineEdit" parent="VBoxContainer/HBoxContainer3" unique_id=1821845675]
+[node name="InputPassword" type="LineEdit" parent="VBoxContainer/HBoxContainer3" unique_id=1821845675]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/normal = SubResource("StyleBoxFlat_k2kv1")
@@ -297,3 +297,4 @@ size_flags_vertical = 3
 color = Color(0.9015185, 0.48548663, 0.2124277, 1)
 
 [connection signal="pressed" from="VBoxContainer/HBoxContainer4/SignUPBT" to="." method="_on_sign_upbt_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer5/CerrarBT" to="." method="_on_cerrar_bt_pressed"]

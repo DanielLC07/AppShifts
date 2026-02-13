@@ -1,8 +1,8 @@
 extends Control
 
 @onready var input_email = $VBoxContainer/HBoxContainer2/InputCorreo
-@onready var input_pass = $VBoxContainer/HBoxContainer3/InputCorreo # O InputPass
-@onready var lbl_mensaje = $VBoxContainer/LabelMensaje # Opcional: Para mostrar errores
+@onready var input_pass = $VBoxContainer/HBoxContainer3/InputPassword
+@onready var lbl_mensaje = $VBoxContainer/LabelMensaje 
 
 func _on_sign_upbt_pressed() -> void:
 	var email = input_email.text
@@ -21,3 +21,7 @@ func _on_sign_upbt_pressed() -> void:
 		get_tree().change_scene_to_file("res://Scene/login.tscn")
 	else:
 		print("Error: El usuario ya existe")
+		
+	
+func _on_cerrar_bt_pressed() -> void:
+	get_tree().quit()
