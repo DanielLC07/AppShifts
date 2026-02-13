@@ -10,22 +10,29 @@ func _ready():
 
 func registrar_usuario(email, password):
 	if base_de_datos.has(email):
-		return false
+		return false 
+	
+	var password_hashed = password.sha256_text()
 	
 	base_de_datos[email] = {
-		"password": password,
+		"password": password_hashed,
 		"fecha_registro": Time.get_datetime_string_from_system(),
-		"historial": [] 
+		"historial": []
 	}
+	
 	guardar_en_disco()
 	return true
-
+	
 func verificar_login(email, password):
 	if not base_de_datos.has(email):
 		return false
 	
-	if base_de_datos[email]["password"] == password:
-		usuario_actual = email 
+	var hash_guardado = base_de_datos[email]["password"]
+	
+	var hash_input = password.sha256_text()
+	
+	if hash_guardado == hash_input:
+		usuario_actual = email
 		return true
 	
 	return false
